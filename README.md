@@ -11,6 +11,7 @@ Using OpenWeather API, Shadcn UI, TailwindCSS and TypeScript.
   - Weather conditions
   - Humidity
   - Wind speed
+- Search for a specific city
 - 5-day weather forecast (OpenWeather API does not support 7-day forecasts for free tier)
 - Responsive design for desktop and mobile viewing
 

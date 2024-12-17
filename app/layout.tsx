@@ -1,3 +1,4 @@
+import { LucideWaves } from "lucide-react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -25,11 +26,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="da">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-slate-900 text-white p-6`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-slate-900 text-white`}
       >
-        {children}
+        <header className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex items-center py-6">
+          <LucideWaves className="h-8 w-8 text-yellow-400" />
+          <h1 className="text-xl font-semibold ml-2 text-white">
+            Better Weather
+          </h1>
+        </header>
+        <main className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          {children}
+        </main>
       </body>
     </html>
   );

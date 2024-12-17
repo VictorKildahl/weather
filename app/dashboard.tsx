@@ -18,7 +18,7 @@ type DashboardProps = {
 };
 
 export function Dashboard({ initialWeatherData }: DashboardProps) {
-  const [city, setCity] = useState("Aarhus");
+  const [city, setCity] = useState("");
   const [searchCity, setSearchCity] = useState("Aarhus");
   const [error, setError] = useState<string | null>(null);
 
@@ -61,7 +61,7 @@ export function Dashboard({ initialWeatherData }: DashboardProps) {
   };
 
   return (
-    <div className="max-w-6xl mx-auto space-y-6">
+    <div className="space-y-6">
       <div className="space-y-2">
         <Input
           type="text"

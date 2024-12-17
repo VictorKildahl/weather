@@ -7,7 +7,7 @@ import { WeeklyForecastSkeleton } from "@/components/weekly-forecast/weekly-fore
 
 export function DashboardSkeleton() {
   return (
-    <div className="max-w-6xl mx-auto space-y-6">
+    <div className="space-y-6">
       <div className="space-y-2">
         <Input
           type="text"
